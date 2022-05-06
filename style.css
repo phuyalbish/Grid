@@ -1,0 +1,359 @@
+
+*{
+    padding:0px;margin:0px;
+    box-sizing: border-box;
+}
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+    width:100%;
+    height:200vh;
+    grid-gap: 10px;
+    grid-template-areas:
+    "cont1 cont2"
+    "cont3 cont3"
+    "cont4 cont4"
+    ;
+    }
+    .contain{
+    background-color:#585858;
+    width:100%;
+    }
+    .container__container1{
+    grid-area: cont1;
+    }
+    .container__container2{
+    grid-area: cont2;
+    
+    }
+    .container__container3{
+    grid-area: cont3;
+    }
+    
+ 
+.contain{
+    background-color:#585858;
+    width:100%;
+}
+.container__container1{
+    grid-area: cont1;
+
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+    padding:10px;
+    grid-template-areas:
+            "item1 item1 item2 item2"
+            "item1 item1 item3 item3"
+            "item4 item4 item5 item5"
+            "item6 item6 item5 item5"
+    ;
+}
+.container__container1__item1{
+    grid-area: item1;
+}
+    
+.container__container1__item2{
+    grid-area: item2;
+}
+    
+.container__container1__item3{
+    grid-area: item3;
+}
+    
+.container__container1__item4{
+    grid-area: item4;
+}
+    
+.container__container1__item5{
+    grid-area: item5;
+}
+    
+.container__container1__item6{
+    grid-area: item6;
+}
+
+
+
+.container__container2{
+    grid-area: cont2;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+    padding:10px;
+    grid-template-areas:
+            "item1 item1 item2 item2"
+            "item3 item3 item2 item2"
+            "item4 item4 item5 item5"
+            "item4 item4 item6 item6"
+    ;
+}
+.container__container2__item1{
+    grid-area: item1;
+}
+    
+.container__container2__item2{
+    grid-area: item2;
+}
+    
+.container__container2__item3{
+    grid-area: item3;
+}
+    
+.container__container2__item4{
+    grid-area: item4;
+}
+    
+.container__container2__item5{
+    grid-area: item5;
+}
+    
+.container__container2__item6{
+    grid-area: item6;
+}
+    
+
+
+/* Bishal */
+.container__container3{
+    grid-area: cont3;
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(4,1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+    padding:10px;
+    grid-template-areas:
+        "item1 item2"
+        "item1 item3"
+        "item4 item5"
+        "item4 item6"
+    
+    ;
+
+}
+.items{
+        background-color:#fff;
+}
+.inneritem{
+    background-color: #585858;
+}
+.container__container3__item1{
+    grid-area: item1;
+}
+.container__container3__item2{
+    grid-area: item2;
+    display:grid;
+    grid-template-columns: 12fr 1fr 1fr;
+    padding:5px;
+    grid-gap:5px;
+    grid-template-areas: 
+        ". item1 item2";
+}
+
+.item2__inneritem1{
+    grid-area: item1;
+}
+
+.item2__inneritem2{
+    grid-area: item2;
+}
+
+.container__container3__item3{
+    grid-area: item3;
+    display:grid;
+    grid-template-columns: 12fr 1fr 1fr;
+    padding:5px;
+    grid-gap:5px;
+    grid-template-areas: 
+        ". item1 item2";
+}
+.item3__inneritem1{
+    grid-area: item1;
+}
+
+.item3__inneritem2{
+    grid-area: item2;
+}
+.container__container3__item4{
+    grid-area: item4;
+}
+.container__container3__item5{
+    grid-area: item5;
+    display:grid;
+    grid-template-columns: 12fr 1fr 1fr;
+    padding:5px;
+    grid-gap:5px;
+    grid-template-areas: 
+        ". item1 item2";
+}
+.item5__inneritem1{
+    grid-area: item1;
+}
+
+.item5__inneritem2{
+    grid-area: item2;
+}
+.container__container3__item6{
+    grid-area: item6;
+    display:grid;
+    grid-template-columns: 12fr 1fr 1fr;
+    padding:5px;
+    grid-gap:5px;
+    grid-template-areas: 
+        ". item1 item2";
+}
+.item6__inneritem1{
+    grid-area: item1;
+}
+
+.item6__inneritem2{
+    grid-area: item2;
+}
+
+
+.container__container4{
+    grid-area: cont4;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas
+    :
+    "container__container4__item1 container__container4__item2"
+    "container__container4__item3 container__container4__item3"
+    ;
+    grid-gap: 40px;
+}
+.container__container4__item1
+{
+    grid-area: container__container4__item1;
+}
+.container__container4__item2
+{
+    grid-area: container__container4__item2;
+    background: #B6A7A7;
+}
+.container__container4__item3
+{
+    grid-area: container__container4__item3;
+}
+
+
+.container__container4__item1
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas
+    :
+    "container__container4__item1__sub-item1 container__container4__item1__sub-item1 container__container4__item1__sub-item1 container__container4__item1__sub-item1"
+    "container__container4__item1__sub-item1 container__container4__item1__sub-item1 container__container4__item1__sub-item1 container__container4__item1__sub-item1"
+    "container__container4__item1__sub-item1 container__container4__item1__sub-item1 container__container4__item1__sub-item1 container__container4__item1__sub-item1"
+    "container__container4__item1__sub-item2 container__container4__item1__sub-item3 container__container4__item1__sub-item4 container__container4__item1__sub-item5"
+    ;
+    grid-gap: 10px;
+}
+.container__container4__item1__sub-item1
+{
+    grid-area: container__container4__item1__sub-item1;
+}
+.container__container4__item1__sub-item2
+{
+    grid-area: container__container4__item1__sub-item2;
+}
+.container__container4__item1__sub-item3
+{
+    grid-area: container__container4__item1__sub-item3;
+}
+.container__container4__item1__sub-item4
+{
+    grid-area: container__container4__item1__sub-item4;
+}
+.container__container4__item1__sub-item5
+{
+    grid-area: container__container4__item1__sub-item5;
+}
+.container__container4__item1 .sub-item
+{
+    background: #B6A7A7;
+}
+
+
+.container__container4__item2
+{
+    padding: 30px 10px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas
+    :
+    "container__container4__item2__sub-item1"
+    "container__container4__item2__sub-item2"
+    "container__container4__item2__sub-item3"
+    ;
+    grid-gap: 20px;
+}
+.container__container4__item2__sub-item1
+{
+    grid-area: container__container4__item2__sub-item1;
+}
+.container__container4__item2__sub-item2
+{
+    grid-area: container__container4__item2__sub-item2;
+}
+.container__container4__item2__sub-item3
+{
+    grid-area: container__container4__item2__sub-item3;
+}
+.container__container4__item2 .sub-item
+{
+    background: white;
+}
+
+
+.container__container4__item3
+{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas
+    :
+    "container__container4__item3__sub-item1 container__container4__item3__sub-item1 container__container4__item3__sub-item2 container__container4__item3__sub-item2 container__container4__item3__sub-item3 container__container4__item3__sub-item4 container__container4__item3__sub-item5 container__container4__item3__sub-item5"
+    "container__container4__item3__sub-item1 container__container4__item3__sub-item1 container__container4__item3__sub-item2 container__container4__item3__sub-item2 container__container4__item3__sub-item3 container__container4__item3__sub-item4 container__container4__item3__sub-item6 container__container4__item3__sub-item6"
+    ;
+    grid-gap: 20px;
+}
+.container__container4__item3__sub-item1
+{
+    grid-area: container__container4__item3__sub-item1;
+    border-radius: 50%;
+}
+.container__container4__item3__sub-item2
+{
+    grid-area: container__container4__item3__sub-item2;
+}
+.container__container4__item3__sub-item3
+{
+    grid-area: container__container4__item3__sub-item3;
+}
+.container__container4__item3__sub-item4
+{
+    grid-area: container__container4__item3__sub-item4;
+}
+.container__container4__item3__sub-item5
+{
+    grid-area: container__container4__item3__sub-item5;
+}
+.container__container4__item3__sub-item6
+{
+    grid-area: container__container4__item3__sub-item6;
+}
+.container__container4__item3 .sub-item
+{
+    background: #B6A7A7;
+}
+    

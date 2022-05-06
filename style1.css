@@ -1,0 +1,147 @@
+
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+.grid-container{
+    margin:1%;
+    width:98%;
+    height:95vh;
+    display:grid;
+    grid-gap:20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "grid-cont1 grid-cont1 grid-cont3"
+    "grid-cont1 grid-cont1 grid-cont3"
+    "grid-cont2 grid-cont2 grid-cont2"
+    ;
+
+}
+
+
+.grid-container1
+{
+    padding: 20px;
+    background-color: #5e5e5e;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "grid1 grid2 grid3"
+    "grid4 grid5 grid5"
+    "grid6 grid5 grid5";
+    grid-gap: 20px 20px;
+    grid-area: grid-cont1;
+}
+.grid-container1 .grid1
+{
+    grid-area: grid1;
+}
+.grid-container1 .grid2
+{
+    grid-area: grid2;
+}
+.grid-container1 .grid3
+{
+    grid-area: grid3;
+}
+.grid-container1 .grid4
+{
+    grid-area: grid4;
+}
+.grid-container1 .grid5
+{
+    grid-area: grid5;
+}
+.grid-container1 .grid6
+{
+    grid-area: grid6;
+}
+
+.grid-container2
+{
+    background: #5e5e5e;
+    padding:20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap:20px;
+    grid-template-areas
+    : 
+    "grid1 grid3 grid4 grid5"
+    "grid2 grid3 grid4 grid5"
+    ;
+
+    grid-area: grid-cont2;
+
+}
+.grid-container2 .grid1
+{
+    grid-area: grid1;
+}
+.grid-container2 .grid2
+{
+    grid-area: grid2;
+}
+.grid-container2 .grid3
+{
+    grid-area: grid3;
+}
+.grid-container2 .grid4
+{
+    grid-area: grid4;
+}
+.grid-container2 .grid5
+{
+    grid-area: grid5;
+}
+
+.grid-container3{
+    padding:10px;
+    background-color:#5e5e5e;
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+    grid-gap:20px;
+    justify-items: center;
+    grid-template-areas: 
+    "grid1"
+    "grid2"
+    "grid3"
+    "grid3"
+    "grid4"
+    "grid5"
+        
+    ;
+
+    grid-area: grid-cont3;
+}
+.grid-items{
+    background-color:#fff;
+}
+.grid-container3 .grid-items{
+    width:85%;
+}
+.grid-container3 .grid1
+
+{
+    grid-area: grid1;
+}
+.grid-container3 .grid2
+{
+    grid-area: grid2;
+}
+.grid-container3 .grid3
+{
+    grid-area: grid3;
+}
+.grid-container3 .grid4
+{
+    grid-area: grid4;
+}
+.grid-container3 .grid5
+{
+    grid-area: grid5;
+}
